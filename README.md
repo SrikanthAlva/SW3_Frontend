@@ -1,29 +1,14 @@
-```
-yarn create react-app all-dapps --template typescript
+# Subtle Web3
 
-cd all-dapps
+Minimal User Interface for Popular Smart Contracts
 
-yarn add @rainbow-me/rainbowkit wagmi ethers@^5
+## Completed Projects
 
-yarn add @chakra-ui/react @chakra-ui/icons @emotion/react @emotion/styled framer-motion react-icons
+1. Token Transfer
+2. Simple Storage
+3. Task Manage
+4. Polling
 
-yarn add prettier
+## Under development Project
 
-```
-
-.prettierrc file
-
-```
-{
-    "trailingComma": "es5",
-    "tabWidth": 2,
-    "semi": false,
-    "singleQuote": true,
-    "printWidth": 100
-}
-```
-
-```
-yarn add use-debounce // Have to delete
-yarn add react-router-dom
-```
+1. Rock Paper Scissors
