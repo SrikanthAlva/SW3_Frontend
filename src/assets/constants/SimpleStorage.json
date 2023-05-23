@@ -1,0 +1,1 @@
+[{"type":"constructor","payable":false,"inputs":[{"type":"string","name":"_data"}]},{"type":"function","name":"getData","constant":true,"stateMutability":"view","payable":false,"inputs":[],"outputs":[{"type":"string","name":"red"}]},{"type":"function","name":"setData","constant":false,"payable":false,"inputs":[{"type":"string","name":"_data"}],"outputs":[]}]

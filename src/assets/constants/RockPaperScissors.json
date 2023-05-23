@@ -1,0 +1,97 @@
+[
+  {
+    "type": "function",
+    "name": "addInitiatorChoice",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "_responder" },
+      { "type": "uint8", "name": "_choice" },
+      { "type": "string", "name": "_randomStr" }
+    ],
+    "outputs": [{ "type": "bool" }]
+  },
+  {
+    "type": "function",
+    "name": "addResponderChoice",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "_initiator" },
+      { "type": "uint8", "name": "_choice" },
+      { "type": "string", "name": "_randomStr" }
+    ],
+    "outputs": [{ "type": "bool" }]
+  },
+  {
+    "type": "function",
+    "name": "getGameDetails",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "_initiator" },
+      { "type": "address", "name": "_responder" }
+    ],
+    "outputs": [
+      {
+        "type": "tuple",
+        "components": [
+          { "type": "address", "name": "initiator" },
+          { "type": "uint8", "name": "initiator_state" },
+          { "type": "bytes32", "name": "initiator_hash" },
+          { "type": "uint8", "name": "initiator_choice" },
+          { "type": "string", "name": "initiator_random_str" },
+          { "type": "address", "name": "responder" },
+          { "type": "uint8", "name": "responder_state" },
+          { "type": "bytes32", "name": "responder_hash" },
+          { "type": "uint8", "name": "responder_choice" },
+          { "type": "string", "name": "responder_random_str" },
+          { "type": "uint8", "name": "state" },
+          { "type": "address", "name": "winner" },
+          { "type": "string", "name": "comment" }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "getInitiatorResult",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_responder" }],
+    "outputs": [{ "type": "address" }, { "type": "uint8" }, { "type": "string" }]
+  },
+  {
+    "type": "function",
+    "name": "getResponderResult",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_initiator" }],
+    "outputs": [{ "type": "address" }, { "type": "uint8" }, { "type": "string" }]
+  },
+  {
+    "type": "function",
+    "name": "initiateGame",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "_responder" },
+      { "type": "bytes32", "name": "_initiator_hash" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "respond",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "_initiator" },
+      { "type": "bytes32", "name": "_responder_hash" }
+    ],
+    "outputs": []
+  }
+]

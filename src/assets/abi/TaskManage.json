@@ -1,0 +1,89 @@
+{
+  "contract": "0xeEE1f7A64BE6009f386C9250Db7c76bB72f77A67",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_assignee",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "_taskDesc",
+          "type": "string"
+        }
+      ],
+      "name": "createTask",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_taskIndex",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum TaskManage.TaskStatus",
+          "name": "status",
+          "type": "uint8"
+        }
+      ],
+      "name": "updateTaskStatus",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getRecentTasks",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "assignee",
+              "type": "address"
+            },
+            {
+              "internalType": "enum TaskManage.TaskStatus",
+              "name": "status",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "taskDesc",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct TaskManage.Task[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTotalTaskCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}
